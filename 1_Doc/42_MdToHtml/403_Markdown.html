@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang xml:lang>
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>403_Markdown</title>
+  <style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+
+ul.task-list[class]{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+font-size: inherit;
+width: 0.8em;
+margin: 0 0.8em 0.2em -1.6em;
+vertical-align: middle;
+}
+.display.math{display: block; text-align: center; margin: 0.5rem auto;}
+</style>
+  <link href="data:text/css,%3Cstyle%20scoped%3E%2F%2F%20modify%20your%20style%20here%2F%2F%20eg%3A%20background%2Dcolor%3A%20blue%3B%20h1%20%7Bpadding%3A%200%2E4em%200%2E5em%3Bcolor%3A%20%23494949%3Bbackground%3A%20%23f4f4f4%3Bborder%2Dleft%3A%20solid%205px%20%237db4e6%3Bborder%2Dbottom%3A%20solid%203px%20%23d7d7d7%3B%7Dh2%20%7Bposition%3A%20relative%3Bpadding%3A%200%2E5em%3Bbackground%3A%20%237db4e6%3Bcolor%3A%20white%3B%7Dh2%3A%3Abefore%20%7Bposition%3A%20absolute%3Bcontent%3A%20%27%27%3Btop%3A%20100%25%3Bleft%3A%200%3Bborder%3A%20none%3Bborder%2Dbottom%3A%20solid%2015px%20transparent%3Bborder%2Dright%3A%20solid%2020px%20rgb%28149%2C%20158%2C%20155%29%3B%7Dbody%20%7Bbackground%2Dcolor%3A%20%23e5e8e8%3Bcolor%3A%20%231b1b1b%3B%7Dh3%20%7Bfont%2Dsize%3A%2022px%3Bfont%2Dweight%3A%20bold%3Bborder%2Dbottom%3A%203px%20solid%20%2333ad9d%3Bmargin%3A%2040px%200%2010px%3B%7Dh4%20%7Bfont%2Dsize%3A%2018px%3Bfont%2Dweight%3A%20bold%3Bborder%2Dleft%3A%203px%20solid%20%2333ad9d%3Bmargin%3A%2040px%200%2010px%3Bpadding%3A%200%200%200%2010px%3B%7Dh5%20%7Bfont%2Dsize%3A%2016px%3Bmargin%3A%2040px%200%2010px%3Bfont%2Dweight%3A%20bold%3B%7Dhr%20%7Bheight%3A%201px%3Bbackground%2Dcolor%3A%20%23b8bfbe%3Bmargin%3A%2020px%200%3B%7Dem%20%7Bbackground%3A%20linear%2Dgradient%28transparent%2080%25%2C%20%23e7ff46%2080%25%29%3Bpadding%3A%200%205px%3Bfont%2Dstyle%3A%20normal%3B%7Dstrong%20%7Bbackground%3A%20linear%2Dgradient%28transparent%200%25%2C%20%23e7ff46%200%25%29%3Bpadding%3A%200%205px%3Bborder%2Dradius%3A%205px%3B%7Dp%20code%2Cli%20code%2Ctd%20code%20%7Bfont%2Dfamily%3A%20%22Consolas%22%2C%20%22Courier%20New%22%2C%20monospace%3Bbackground%2Dcolor%3A%20%23d0d8d7%3Bfont%2Dsize%3A%2090%25%3Bfont%2Dstyle%3A%20normal%3Bpadding%3A%200%205px%3Bborder%2Dradius%3A%203px%3Bcolor%3A%20%231b1b1b%3B%7Dpre%20%7Bbackground%2Dcolor%3A%20%23272b2b%20%21important%3B%7Dul%2Col%20%7Bpadding%3A%200%200%200%2E5em%201%2E5em%3B%7Dul%20%3E%20li%2Col%20%3E%20li%20%7Bposition%3A%20relative%3Blist%2Dstyle%3A%20none%3Bmargin%3A%205px%200%3B%7Dul%20%3E%20li%3A%3Aafter%20%7Bdisplay%3A%20block%3Bcontent%3A%20%22%22%3Bposition%3A%20absolute%3Btop%3A%200%2E5em%3Bleft%3A%20%2D1em%3Bwidth%3A%206px%3Bheight%3A%206px%3Bbackground%2Dcolor%3A%20%2333ad9d%3Bborder%2Dradius%3A%20100%25%3B%7Dul%20ul%20li%3A%3Aafter%20%7Bdisplay%3A%20block%3Bcontent%3A%20%22%22%3Bposition%3A%20absolute%3Btop%3A%200%2E75em%3Bleft%3A%20%2D1em%3Bwidth%3A%206px%3Bheight%3A%202px%3Bbackground%2Dcolor%3A%20%2333ad9d%3B%7Dul%20ul%20ul%20li%3A%3Aafter%20%7Bdisplay%3A%20block%3Bcontent%3A%20%22%22%3Bposition%3A%20absolute%3Btop%3A%200%2E5em%3Bleft%3A%20%2D1em%3Bwidth%3A%206px%3Bheight%3A%206px%3Bborder%2Dright%3A%202px%20solid%20%2333ad9d%3Bborder%2Dbottom%3A%202px%20solid%20%2333ad9d%3Bbackground%2Dcolor%3A%20inherit%3Bborder%2Dradius%3A%200%3B%2Dwebkit%2Dtransform%3A%20rotate%28%2D45deg%29%3Btransform%3A%20rotate%28%2D45deg%29%3B%7Dul%2Earrow%20%3E%20li%3A%3Aafter%20%7Bdisplay%3A%20block%3Bcontent%3A%20%22%22%3Bposition%3A%20absolute%3Btop%3A%200%2E5em%3Bleft%3A%20%2D1em%3Bwidth%3A%206px%3Bheight%3A%206px%3Bborder%2Dright%3A%202px%20solid%20%2333ad9d%3Bborder%2Dbottom%3A%202px%20solid%20%2333ad9d%3Bbackground%2Dcolor%3A%20inherit%3Bborder%2Dradius%3A%200%3B%2Dwebkit%2Dtransform%3A%20rotate%28%2D45deg%29%3Btransform%3A%20rotate%28%2D45deg%29%3B%7Dul%2Echeck%20%3E%20li%3A%3Aafter%20%7Bdisplay%3A%20block%3Bcontent%3A%20%22%22%3Bposition%3A%20absolute%3Btop%3A%200%2E5em%3Bleft%3A%20%2D1em%3Bwidth%3A%208px%3Bheight%3A%203px%3Bborder%2Dleft%3A%202px%20solid%20%2333ad9d%3Bborder%2Dbottom%3A%202px%20solid%20%2333ad9d%3Bbackground%2Dcolor%3A%20inherit%3Bborder%2Dradius%3A%200%3B%2Dwebkit%2Dtransform%3A%20rotate%28%2D45deg%29%3Btransform%3A%20rotate%28%2D45deg%29%3B%7Dol%20%3E%20li%20%7B%20counter%2Dincrement%3A%20li%3B%7Dol%20%3E%20li%3A%3Abefore%20%7Bcontent%3A%20counter%28li%29%3Bdisplay%3A%20block%3Bposition%3A%20absolute%3Btop%3A%20%2E3em%3Bleft%3A%20%2D1em%3Bcolor%3A%20%2333ad9d%3Bfont%2Dsize%3A%2014px%3Bline%2Dheight%3A%201%3Bfont%2Dweight%3A%20bold%3B%7Dtable%20%7Bborder%2Dcollapse%3A%20collapse%3Bborder%3A%201px%20solid%20%23b7bdbc%20%21important%3Bline%2Dheight%3A%201%2E5%3Bmargin%3A%2010px%200%3Bwidth%3A%20100%25%3B%7Dtable%20th%20%7Bpadding%3A%2010px%3Bfont%2Dsize%3A%2012px%3Bfont%2Dweight%3A%20bold%3Bvertical%2Dalign%3A%20top%3Btext%2Dalign%3A%20left%3Bbackground%3A%20%23c6cbca%3Bborder%3A%201px%20solid%20%23b7bdbc%20%21important%3B%7Dtable%20td%20%7Bfont%2Dsize%3A%2012px%3Bpadding%3A%2010px%3Bvertical%2Dalign%3A%20top%3Bborder%3A%201px%20solid%20%23b7bdbc%20%21important%3B%7Dtable%2Estripe%20tr%3Anth%2Dchild%28even%29%20%7Bbackground%3A%20%23dcdfdf%3B%7Dtable%2Edark%20th%20%7Bcolor%3A%20%23e5e8e8%3Bbackground%3A%20%23272b2b%3B%7D%2Ebox%5Fgray%20%7Bbackground%3A%20%23dcdfdf%3Bborder%3A%202px%20solid%20%23b8bfbe%3Bborder%2Dradius%3A%2010px%3Bmargin%3A%2020px%200%3Bpadding%3A%201em%3B%7D%2Ebox%5Fpink%20%7Bbackground%3A%20%23e7d5d5%3Bborder%3A%202px%20solid%20%23d47e7e%3Bborder%2Dradius%3A%2010px%3Bmargin%3A%2020px%200%3Bpadding%3A%201em%3B%7D%2Ebox%5Fpink%20ul%2C%20%2Ebox%5Fpink%20ol%20%7Bpadding%3A%200%200%200%201%2E5em%3B%7D%2Ebox%5Fpink%20ol%20%3E%20li%3A%3Abefore%20%7Bcontent%3A%20counter%28li%29%3Bdisplay%3A%20block%3Bposition%3A%20absolute%3Btop%3A%20%2E3em%3Bleft%3A%20%2D1em%3Bcolor%3A%20%23d47e7e%3Bline%2Dheight%3A%201%3Bfont%2Dweight%3A%20bold%3B%7D%2Ebox%5Fpink%20ul%20%3E%20li%3A%3Aafter%20%7Bdisplay%3A%20block%3Bcontent%3A%20%22%22%3Bposition%3A%20absolute%3Btop%3A%200%2E5em%3Bleft%3A%20%2D1em%3Bwidth%3A%206px%3Bheight%3A%206px%3Bbackground%2Dcolor%3A%20%23d47e7e%3Bborder%2Dradius%3A%20100%25%3B%7D%2Ebox%5Fgray%20ul%2C%20%2Ebox%5Fgray%20ol%20%7Bpadding%3A%200%200%200%201%2E5em%3B%7D%2Ebox%5Fgray%20ol%20%3E%20li%3A%3Abefore%20%7Bcontent%3A%20counter%28li%29%3Bdisplay%3A%20block%3Bposition%3A%20absolute%3Btop%3A%20%2E3em%3Bleft%3A%20%2D1em%3Bcolor%3A%20%23b8bfbe%3Bline%2Dheight%3A%201%3Bfont%2Dweight%3A%20bold%3B%7D%2Ebox%5Fgray%20ul%20%3E%20li%3A%3Aafter%20%7Bdisplay%3A%20block%3Bcontent%3A%20%22%22%3Bposition%3A%20absolute%3Btop%3A%200%2E5em%3Bleft%3A%20%2D1em%3Bwidth%3A%206px%3Bheight%3A%206px%3Bbackground%2Dcolor%3A%20%23b8bfbe%3Bborder%2Dradius%3A%20100%25%3B%7D%3C%2Fstyle%3E" rel="stylesheet" />
+</head>
+<body>
+<h1 id="マークダウン">マークダウン</h1>
+<h2 id="マークダウンとは">マークダウンとは</h2>
+<ul>
+<li><a href="https://backlog.com/ja/blog/how-to-write-markdown/">マークダウン記法とは？
+マークダウンの書き方を網羅的に解説</a><br />
+<strong>マークアップ言語よりも容易で表記も自由な、変更にも強く自動ツールとの相性も良いマークダウン表記を採用する</strong></li>
+</ul>
+<h2 id="メリット">メリット</h2>
+<ul>
+<li><strong>無料</strong></li>
+<li>GitHubやWEBブラウザなどさまざまなソフト、マルチプラットフォーム環境で使用可能。</li>
+<li>htmlより簡単な文法で表記が可能。</li>
+<li>さまざまな形式のデータを一元管理できる。</li>
+<li>開発者視点での観点
+<ul>
+<li>他のフォーマットへの変換も可能。PDFなど(移行が容易)</li>
+<li>RPAや自動化などの業務効率化への転用も可能。</li>
+<li>テキスト形式でバージョン管理ツールとの相性も良い。</li>
+<li>プレーンテキストなので検索、変更が容易。正規表現も利用できる。</li>
+<li>VS
+Codeの利用によりプログラミングやドキュメント作成がソフトの切替なしに可能。</li>
+<li>ChatGPTなどのAIの入力、出力のフォーマットとしてそのままの利用が可能。</li>
+<li>html,cssと同じメリットを活かすことができ、レイアウトの修正コストの削減が可能。</li>
+</ul></li>
+</ul>
+<h2 id="利用例">利用例</h2>
+<h3 id="他社の利用事例紹介">他社の利用事例紹介</h3>
+<blockquote>
+<p>[!IMPORTANT]<br />
+<strong>クックバッド社のMarkdownとGitHubを用いた導入事例</strong> - <a href="https://techlife.cookpad.com/entry/2019/06/26/182322">社内規程を便利に管理</a></p>
+</blockquote>
+<h3 id="他のフォーマットに自動変換可能">他のフォーマットに自動変換可能</h3>
+<p><strong>文書作成のRPAとしての高い利用価値がある。</strong></p>
+<ul>
+<li>PDF</li>
+<li>HTML</li>
+<li>Word</li>
+</ul>
+<h2 id="文法">文法</h2>
+<p>文法に関しては下記を参照</p>
+<ul>
+<li><a href="https://cloud.google.com/apigee/docs/api-platform/publish/portal/markdown-reference?hl=ja">Markdown
+構文のクイック リファレンス</a></li>
+<li><a href="https://ai-inter1.com/markdown/">図解！Markdown記法の書き方を徹底解説</a></li>
+<li><a href="https://un4navi.com/prologue/20079/">覚えてしまえばすごく楽！Markdown記法を使ってみよう</a></li>
+<li><a href="https://hachian.com/2019/09/09/markdown%E3%81%AE%E8%A6%8B%E5%87%BA%E3%81%97%E3%83%BB%E5%AD%97%E4%B8%8B%E3%81%92%E3%82%A4%E3%83%B3%E3%83%87%E3%83%B3%E3%83%88%E3%81%A8%E6%96%87%E7%AB%A0%E6%A7%8B%E9%80%A0/">Markdownの見出し・字下げ(インデント)と文章構造</a></li>
+</ul>
+<h2 id="便利な設定拡張">便利な設定・拡張</h2>
+<h3 id="vs-codeとの連携">VS Codeとの連携</h3>
+<h4 id="全般">全般</h4>
+<ul>
+<li><a href="https://dotengineerblog.net/vscode-extensions-markdown-writing/">執筆をラクにするオススメ拡張機能10選</a></li>
+<li><a href="https://qiita.com/84zume/items/1e6c720caba9898f5af2">Visual
+Studio CodeでMarkdownを書く環境を整える</a></li>
+</ul>
+<h4 id="設定">設定</h4>
+<p><strong><a href="https://hachian.com/2020/08/17/vscode_markdown_css/">Visual Studio
+CodeのMarkdownプレビューにCSSを適用する</a></strong> - <a href="https://habataki-blog.com/editor-vscode-markdown-css/">Markdown
+PreviewをCSSで読みやすくする方法 part2</a> - <a href="https://qiita.com/Soluna_Eureka/items/147de0a68d1026988b10">VSCodeの設定用json_markdown_pdf</a></p>
+<h4 id="画像連携">画像連携</h4>
+<ul>
+<li><a href="https://zenn.dev/ktechb/articles/968ff79f8f9c46a26ee5">Markdownでスクショ画像をペーストする</a></li>
+<li><a href="https://tonari-it.com/vscode-markdown-paste-image-charactercount/">ペーストパス設定</a></li>
+</ul>
+<h3 id="自動変換">自動変換</h3>
+<ul>
+<li><a href="https://zatta.link/web/top3-tools-for-convert-markdown-to-html.html">Markdownを素敵なHTMLに変換するツール3選</a></li>
+</ul>
+<h2 id="chromeを利用したローカル環境のプレビュー">Chromeを利用したローカル環境のプレビュー</h2>
+<ul>
+<li><a href="https://qiita.com/C_HERO/items/194d477475f3a7f49a85">様々なブラウザやテキストエディタでMarkDownを表示させる</a></li>
+</ul>
+<h3 id="chromeのcss表示設定">ChromeのCSS表示設定</h3>
+<ul>
+<li><figure>
+<img role="img" aria-label="Chrome上での指定方法" src="../13_Ref/r120_Mak_Chrome_Markdwon適用.png" alt="Chrome上での指定方法" />
+<figcaption aria-hidden="true">Chrome上での指定方法</figcaption>
+</figure></li>
+</ul>
+</body>
+</html>

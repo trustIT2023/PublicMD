@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang xml:lang>
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>411_ビジネスモデルと戦略フレームワーク</title>
+  <style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+
+ul.task-list[class]{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+font-size: inherit;
+width: 0.8em;
+margin: 0 0.8em 0.2em -1.6em;
+vertical-align: middle;
+}
+.display.math{display: block; text-align: center; margin: 0.5rem auto;}
+</style>
+  <link href="data:text/css,%3Cstyle%20scoped%3E%2F%2F%20modify%20your%20style%20here%2F%2F%20eg%3A%20background%2Dcolor%3A%20blue%3B%20h1%20%7Bpadding%3A%200%2E4em%200%2E5em%3Bcolor%3A%20%23494949%3Bbackground%3A%20%23f4f4f4%3Bborder%2Dleft%3A%20solid%205px%20%237db4e6%3Bborder%2Dbottom%3A%20solid%203px%20%23d7d7d7%3B%7Dh2%20%7Bposition%3A%20relative%3Bpadding%3A%200%2E5em%3Bbackground%3A%20%237db4e6%3Bcolor%3A%20white%3B%7Dh2%3A%3Abefore%20%7Bposition%3A%20absolute%3Bcontent%3A%20%27%27%3Btop%3A%20100%25%3Bleft%3A%200%3Bborder%3A%20none%3Bborder%2Dbottom%3A%20solid%2015px%20transparent%3Bborder%2Dright%3A%20solid%2020px%20rgb%28149%2C%20158%2C%20155%29%3B%7Dbody%20%7Bbackground%2Dcolor%3A%20%23e5e8e8%3Bcolor%3A%20%231b1b1b%3B%7Dh3%20%7Bfont%2Dsize%3A%2022px%3Bfont%2Dweight%3A%20bold%3Bborder%2Dbottom%3A%203px%20solid%20%2333ad9d%3Bmargin%3A%2040px%200%2010px%3B%7Dh4%20%7Bfont%2Dsize%3A%2018px%3Bfont%2Dweight%3A%20bold%3Bborder%2Dleft%3A%203px%20solid%20%2333ad9d%3Bmargin%3A%2040px%200%2010px%3Bpadding%3A%200%200%200%2010px%3B%7Dh5%20%7Bfont%2Dsize%3A%2016px%3Bmargin%3A%2040px%200%2010px%3Bfont%2Dweight%3A%20bold%3B%7Dhr%20%7Bheight%3A%201px%3Bbackground%2Dcolor%3A%20%23b8bfbe%3Bmargin%3A%2020px%200%3B%7Dem%20%7Bbackground%3A%20linear%2Dgradient%28transparent%2080%25%2C%20%23e7ff46%2080%25%29%3Bpadding%3A%200%205px%3Bfont%2Dstyle%3A%20normal%3B%7Dstrong%20%7Bbackground%3A%20linear%2Dgradient%28transparent%200%25%2C%20%23e7ff46%200%25%29%3Bpadding%3A%200%205px%3Bborder%2Dradius%3A%205px%3B%7Dp%20code%2Cli%20code%2Ctd%20code%20%7Bfont%2Dfamily%3A%20%22Consolas%22%2C%20%22Courier%20New%22%2C%20monospace%3Bbackground%2Dcolor%3A%20%23d0d8d7%3Bfont%2Dsize%3A%2090%25%3Bfont%2Dstyle%3A%20normal%3Bpadding%3A%200%205px%3Bborder%2Dradius%3A%203px%3Bcolor%3A%20%231b1b1b%3B%7Dpre%20%7Bbackground%2Dcolor%3A%20%23272b2b%20%21important%3B%7Dul%2Col%20%7Bpadding%3A%200%200%200%2E5em%201%2E5em%3B%7Dul%20%3E%20li%2Col%20%3E%20li%20%7Bposition%3A%20relative%3Blist%2Dstyle%3A%20none%3Bmargin%3A%205px%200%3B%7Dul%20%3E%20li%3A%3Aafter%20%7Bdisplay%3A%20block%3Bcontent%3A%20%22%22%3Bposition%3A%20absolute%3Btop%3A%200%2E5em%3Bleft%3A%20%2D1em%3Bwidth%3A%206px%3Bheight%3A%206px%3Bbackground%2Dcolor%3A%20%2333ad9d%3Bborder%2Dradius%3A%20100%25%3B%7Dul%20ul%20li%3A%3Aafter%20%7Bdisplay%3A%20block%3Bcontent%3A%20%22%22%3Bposition%3A%20absolute%3Btop%3A%200%2E75em%3Bleft%3A%20%2D1em%3Bwidth%3A%206px%3Bheight%3A%202px%3Bbackground%2Dcolor%3A%20%2333ad9d%3B%7Dul%20ul%20ul%20li%3A%3Aafter%20%7Bdisplay%3A%20block%3Bcontent%3A%20%22%22%3Bposition%3A%20absolute%3Btop%3A%200%2E5em%3Bleft%3A%20%2D1em%3Bwidth%3A%206px%3Bheight%3A%206px%3Bborder%2Dright%3A%202px%20solid%20%2333ad9d%3Bborder%2Dbottom%3A%202px%20solid%20%2333ad9d%3Bbackground%2Dcolor%3A%20inherit%3Bborder%2Dradius%3A%200%3B%2Dwebkit%2Dtransform%3A%20rotate%28%2D45deg%29%3Btransform%3A%20rotate%28%2D45deg%29%3B%7Dul%2Earrow%20%3E%20li%3A%3Aafter%20%7Bdisplay%3A%20block%3Bcontent%3A%20%22%22%3Bposition%3A%20absolute%3Btop%3A%200%2E5em%3Bleft%3A%20%2D1em%3Bwidth%3A%206px%3Bheight%3A%206px%3Bborder%2Dright%3A%202px%20solid%20%2333ad9d%3Bborder%2Dbottom%3A%202px%20solid%20%2333ad9d%3Bbackground%2Dcolor%3A%20inherit%3Bborder%2Dradius%3A%200%3B%2Dwebkit%2Dtransform%3A%20rotate%28%2D45deg%29%3Btransform%3A%20rotate%28%2D45deg%29%3B%7Dul%2Echeck%20%3E%20li%3A%3Aafter%20%7Bdisplay%3A%20block%3Bcontent%3A%20%22%22%3Bposition%3A%20absolute%3Btop%3A%200%2E5em%3Bleft%3A%20%2D1em%3Bwidth%3A%208px%3Bheight%3A%203px%3Bborder%2Dleft%3A%202px%20solid%20%2333ad9d%3Bborder%2Dbottom%3A%202px%20solid%20%2333ad9d%3Bbackground%2Dcolor%3A%20inherit%3Bborder%2Dradius%3A%200%3B%2Dwebkit%2Dtransform%3A%20rotate%28%2D45deg%29%3Btransform%3A%20rotate%28%2D45deg%29%3B%7Dol%20%3E%20li%20%7B%20counter%2Dincrement%3A%20li%3B%7Dol%20%3E%20li%3A%3Abefore%20%7Bcontent%3A%20counter%28li%29%3Bdisplay%3A%20block%3Bposition%3A%20absolute%3Btop%3A%20%2E3em%3Bleft%3A%20%2D1em%3Bcolor%3A%20%2333ad9d%3Bfont%2Dsize%3A%2014px%3Bline%2Dheight%3A%201%3Bfont%2Dweight%3A%20bold%3B%7Dtable%20%7Bborder%2Dcollapse%3A%20collapse%3Bborder%3A%201px%20solid%20%23b7bdbc%20%21important%3Bline%2Dheight%3A%201%2E5%3Bmargin%3A%2010px%200%3Bwidth%3A%20100%25%3B%7Dtable%20th%20%7Bpadding%3A%2010px%3Bfont%2Dsize%3A%2012px%3Bfont%2Dweight%3A%20bold%3Bvertical%2Dalign%3A%20top%3Btext%2Dalign%3A%20left%3Bbackground%3A%20%23c6cbca%3Bborder%3A%201px%20solid%20%23b7bdbc%20%21important%3B%7Dtable%20td%20%7Bfont%2Dsize%3A%2012px%3Bpadding%3A%2010px%3Bvertical%2Dalign%3A%20top%3Bborder%3A%201px%20solid%20%23b7bdbc%20%21important%3B%7Dtable%2Estripe%20tr%3Anth%2Dchild%28even%29%20%7Bbackground%3A%20%23dcdfdf%3B%7Dtable%2Edark%20th%20%7Bcolor%3A%20%23e5e8e8%3Bbackground%3A%20%23272b2b%3B%7D%2Ebox%5Fgray%20%7Bbackground%3A%20%23dcdfdf%3Bborder%3A%202px%20solid%20%23b8bfbe%3Bborder%2Dradius%3A%2010px%3Bmargin%3A%2020px%200%3Bpadding%3A%201em%3B%7D%2Ebox%5Fpink%20%7Bbackground%3A%20%23e7d5d5%3Bborder%3A%202px%20solid%20%23d47e7e%3Bborder%2Dradius%3A%2010px%3Bmargin%3A%2020px%200%3Bpadding%3A%201em%3B%7D%2Ebox%5Fpink%20ul%2C%20%2Ebox%5Fpink%20ol%20%7Bpadding%3A%200%200%200%201%2E5em%3B%7D%2Ebox%5Fpink%20ol%20%3E%20li%3A%3Abefore%20%7Bcontent%3A%20counter%28li%29%3Bdisplay%3A%20block%3Bposition%3A%20absolute%3Btop%3A%20%2E3em%3Bleft%3A%20%2D1em%3Bcolor%3A%20%23d47e7e%3Bline%2Dheight%3A%201%3Bfont%2Dweight%3A%20bold%3B%7D%2Ebox%5Fpink%20ul%20%3E%20li%3A%3Aafter%20%7Bdisplay%3A%20block%3Bcontent%3A%20%22%22%3Bposition%3A%20absolute%3Btop%3A%200%2E5em%3Bleft%3A%20%2D1em%3Bwidth%3A%206px%3Bheight%3A%206px%3Bbackground%2Dcolor%3A%20%23d47e7e%3Bborder%2Dradius%3A%20100%25%3B%7D%2Ebox%5Fgray%20ul%2C%20%2Ebox%5Fgray%20ol%20%7Bpadding%3A%200%200%200%201%2E5em%3B%7D%2Ebox%5Fgray%20ol%20%3E%20li%3A%3Abefore%20%7Bcontent%3A%20counter%28li%29%3Bdisplay%3A%20block%3Bposition%3A%20absolute%3Btop%3A%20%2E3em%3Bleft%3A%20%2D1em%3Bcolor%3A%20%23b8bfbe%3Bline%2Dheight%3A%201%3Bfont%2Dweight%3A%20bold%3B%7D%2Ebox%5Fgray%20ul%20%3E%20li%3A%3Aafter%20%7Bdisplay%3A%20block%3Bcontent%3A%20%22%22%3Bposition%3A%20absolute%3Btop%3A%200%2E5em%3Bleft%3A%20%2D1em%3Bwidth%3A%206px%3Bheight%3A%206px%3Bbackground%2Dcolor%3A%20%23b8bfbe%3Bborder%2Dradius%3A%20100%25%3B%7D%3C%2Fstyle%3E" rel="stylesheet" />
+</head>
+<body>
+<h2 id="戦略フレームワーク">戦略フレームワーク</h2>
+<h3 id="c分析">3C分析</h3>
+<ul>
+<li><a href="https://www.hrbrain.jp/media/human-resources-management/3C-analysis">3C分析とは？SWOT分析との関係性、やり方などを簡単に解説</a></li>
+</ul>
+<h3 id="swot分析">SWOT分析</h3>
+<ul>
+<li><a href="https://www.innovation.co.jp/urumo/swot/">SWOT分析とは</a></li>
+</ul>
+<h3 id="その他経営戦略">その他経営戦略</h3>
+<h4 id="イノベータ理論">イノベータ理論</h4>
+<ul>
+<li><a href="https://www.onemarketing.jp/contents/innovation-theory_re/">イノベーター理論とは</a></li>
+</ul>
+<h4 id="ランチェスター戦略">ランチェスター戦略</h4>
+<ul>
+<li><a href="https://www.kaonavi.jp/dictionary/lanchester_senryaku/">ランチェスター戦略とは</a></li>
+</ul>
+<p>要約 1. NO.1主義 1. 一点集中主義 1. 「足下の敵」攻撃の原則</p>
+<h4 id="その他">その他</h4>
+<ul>
+<li><a href="https://mirasapo-plus.go.jp/hint/15043/">アンゾフの成長マトリクス</a></li>
+</ul>
+<hr />
+<h2 id="マーケティング">マーケティング</h2>
+<ul>
+<li>重要成功要因設定(KSF)</li>
+<li>マーケティング戦略(STP分析)</li>
+<li>マーケティング施策(4P)</li>
+<li>ドメイン = 活動領域・事業領域とペルソナ設定</li>
+<li>重要成功要因設定（KSF）：勝ちパターンの策定</li>
+</ul>
+</body>
+</html>
