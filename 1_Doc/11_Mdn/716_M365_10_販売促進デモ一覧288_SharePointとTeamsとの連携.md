@@ -69,8 +69,6 @@ Teamsには「SharePointで開く」というメニューもあります。
 
 ## デモサンプル例
 
--[下記デモ画像の操作例](../../7_Prj/716_M365/200_インフラサービス/30_SharePoint/30_SharePoint1.mp4)  
-
 ### デモ画像
 
 ![Alt](../../7_Prj/716_M365/200_インフラサービス/30_SharePoint/30_SharePoint1.png)
